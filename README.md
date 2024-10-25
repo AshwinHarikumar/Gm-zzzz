@@ -23,23 +23,21 @@ well what do all people who dont know if its night time or daytime have in commo
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- javascript
+- React
+- material ui,weather api
+- VS code,github
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- ambient Light Sensor in smart phones
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+node package manager
 
 # Run
-[commands]
+npm run dev, npm run build
 
 ### Project Documentation
 For Software:
@@ -55,8 +53,9 @@ For Software:
 *Add caption explaining what this shows*
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+
+[Workflow Diagram Whiteboard (1)](https://github.com/user-attachments/assets/903e409d-dc77-4ffc-8a34-9884e4695492)
+
 
 For Hardware:
 
