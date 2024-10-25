@@ -7,7 +7,7 @@ import Container from '@mui/material/Container';
 
 function ResponsiveAppBar() {
   return (
-    <AppBar position="static" style={{alignItems:'center',margin:0}}>
+    <AppBar position="static" style={{alignItems:'center',margin:0,backgroundColor:'#002147'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -34,7 +34,7 @@ function ResponsiveAppBar() {
               }}
               src="/icon.png"
             />
-            GM-zzz
+            GM-Zzz
           </Typography>
 
           <Typography
@@ -61,7 +61,7 @@ function ResponsiveAppBar() {
               }}
               src="/icon.png"
             />
-            GM-zzz
+            GM-Zzz
           </Typography>
         </Toolbar>
       </Container>
