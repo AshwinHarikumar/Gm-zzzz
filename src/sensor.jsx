@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import dayImage from '/morning.png'; 
+import nightImage from '/night.png'; 
 
 function Sensor() {
   const [illuminance, setIlluminance] = useState(null);
@@ -74,17 +75,25 @@ function Sensor() {
     <div className="App">
       <header className="App-header">
         <h1>Ambient Light Sensor</h1>
+        
         {illuminance !== null ? (
           <p>Current ambient light level: {illuminance} lux</p>
         ) : (
           <p>Ambient light sensor data is not available.</p>
         )}
-        {isDaytime !== null && (
-          <p>It is currently {isDaytime ? 'daytime' : 'nighttime'} based on sensor data.</p>
-        )}
+        
         {location.lat !== null && location.lon !== null && (
           <p>Location: Latitude {location.lat}, Longitude {location.lon}</p>
         )}
+       
+        {isDaytime !== null && (
+          <>
+            <p>It is currently {isDaytime ? 'day time' : 'night time'} </p>
+            <br/>
+            <img src={isDaytime ? dayImage : nightImage} alt={isDaytime ? 'Daytime' : 'Nighttime'} />
+          </>
+        )}
+        
       </header>
     </div>
   );

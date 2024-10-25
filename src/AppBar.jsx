@@ -11,7 +11,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             sx={{
@@ -22,9 +22,19 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              justifyContent:'center',
+              flexGrow:'1',
             }}
           >
-            LOGO
+            <Box
+              component="img"
+              sx={{
+                height: 40,
+                width: 40,
+              }}
+              src="/icon.png"
+            />
+            GM-zzz
           </Typography>
 
           <Typography
