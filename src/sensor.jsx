@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-function sensor() {
+function Sensor() {
   const [illuminance, setIlluminance] = useState(null);
 
   useEffect(() => {
@@ -55,4 +55,4 @@ function sensor() {
   );
 }
 
-export default sensor;
+export default Sensor;
