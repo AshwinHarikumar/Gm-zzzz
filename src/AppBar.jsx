@@ -7,7 +7,7 @@ import Container from '@mui/material/Container';
 
 function ResponsiveAppBar() {
   return (
-    <AppBar position="static" style={{alignItems:'center'}}>
+    <AppBar position="static" style={{alignItems:'center',margin:0}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
