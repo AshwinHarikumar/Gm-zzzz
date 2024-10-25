@@ -1,45 +1,74 @@
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function Sensor() {
   const [illuminance, setIlluminance] = useState(null);
+  const [location, setLocation] = useState({ lat: null, lon: null });
+  const [isDaytime, setIsDaytime] = useState(null);
 
   useEffect(() => {
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setLocation({
+            lat: position.coords.latitude,
+            lon: position.coords.longitude,
+          });
+        },
+        (error) => {
+          console.error('Error getting geolocation:', error);
+        }
+      );
+    }
+
     if ('AmbientLightSensor' in window) {
       try {
         const sensor = new AmbientLightSensor();
+        let lastReading = null;
         sensor.addEventListener('reading', () => {
-          console.log(`Ambient light level: ${sensor.illuminance} lux`);
-          setIlluminance(sensor.illuminance);
-          
-          sendSensorData(sensor.illuminance);
+          const currentReading = sensor.illuminance;
+          if (lastReading === null || Math.abs(currentReading - lastReading) < 1000) {
+            console.log(`Ambient light level: ${currentReading} lux`);
+            setIlluminance(currentReading);
+            determineDaytime(currentReading);
+            sendSensorData(currentReading);
+          }
+          lastReading = currentReading;
         });
         sensor.start();
       } catch (error) {
         console.error('Error initializing sensor:', error);
-        setIlluminance(getIlluminanceByTime()); 
+        setIlluminance(getIlluminanceByTime());
+        determineDaytime(getIlluminanceByTime());
       }
     } else {
       console.log('Ambient Light Sensor not supported. Mimicking based on time.');
-      setIlluminance(getIlluminanceByTime()); 
+      const illuminanceByTime = getIlluminanceByTime();
+      setIlluminance(illuminanceByTime);
+      determineDaytime(illuminanceByTime);
     }
   }, []);
 
-  
   const getIlluminanceByTime = () => {
     const now = new Date();
     const hours = now.getHours();
 
     if (hours >= 6 && hours < 18) {
-      return 10000; 
+      return 10000;
     } else if (hours >= 18 && hours < 21) {
-      return 500; 
+      return 500;
     } else {
-      return 50; 
+      return 50;
     }
   };
 
+  const determineDaytime = (illuminance) => {
+    if (illuminance > 1000) {
+      setIsDaytime(true);
+    } else {
+      setIsDaytime(false);
+    }
+  };
 
   return (
     <div className="App">
@@ -49,6 +78,12 @@ function Sensor() {
           <p>Current ambient light level: {illuminance} lux</p>
         ) : (
           <p>Ambient light sensor data is not available.</p>
+        )}
+        {isDaytime !== null && (
+          <p>It is currently {isDaytime ? 'daytime' : 'nighttime'} based on sensor data.</p>
+        )}
+        {location.lat !== null && location.lon !== null && (
+          <p>Location: Latitude {location.lat}, Longitude {location.lon}</p>
         )}
       </header>
     </div>
