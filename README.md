@@ -1,6 +1,6 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# GM-Zzz 🎯
 
 
 ## Basic Details
@@ -19,7 +19,7 @@ Project utilises ambient sensors to detect if its daytime or night time
 Inability to recognize if its day time or night time
 
 ### The Solution (that nobody asked for)
-well what do all people who dont know if its night btime or daytime habve in common in this age? Smartphones! we are using thw ambient sensors in smartphones to tell the user that its daytime or night time along with that we are giving them some tips how to utilise their daytime or night time effectively!
+well what do all people who dont know if its night time or daytime have in common in this age? Smartphones! we are using the ambient sensors in smartphones to tell the user that its daytime or night time along with that we are giving them some tips how to utilise their daytime or night time effectively!
 ## Technical Details
 ### Technologies/Components Used
 For Software:
