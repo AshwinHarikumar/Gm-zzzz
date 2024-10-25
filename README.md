@@ -4,13 +4,13 @@
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Data Dynamos
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Ashwin Harikumar - SCMS College Of Enginnering And Technology
+- Member 2: Bharath Sankar - SCMS College Of Enginnering And Technology
+- Member 3: Goutham Santhosh - SCMS College Of Enginnering And Technology
 
 ### Project Description
 [2-3 lines about what your project does]
