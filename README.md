@@ -13,14 +13,13 @@
 - Member 3: Goutham Santhosh - SCMS College Of Enginnering And Technology
 
 ### Project Description
-[2-3 lines about what your project does]
+Project utilises ambient sensors to detect if its daytime or night time 
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Inability to recognize if its day time or night time
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
-
+well what do all people who dont know if its night btime or daytime habve in common in this age? Smartphones! we are using thw ambient sensors in smartphones to tell the user that its daytime or night time along with that we are giving them some tips how to utilise their daytime or night time effectively!
 ## Technical Details
 ### Technologies/Components Used
 For Software:
