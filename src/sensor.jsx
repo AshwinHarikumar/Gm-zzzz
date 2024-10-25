@@ -92,6 +92,15 @@ function Sensor() {
           )}
         </div>
       </header>
+      <footer className="sensor-footer">
+        <meter
+          className="lux-meter"
+          value={illuminance || 0}
+          min="0"
+          max="3000"
+        ></meter>
+        <p>light Meter Intensity</p>
+      </footer>
     </div>
   );
 }
