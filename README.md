@@ -49,15 +49,20 @@ For Software:
 <br/>
 *Application UI at Night time*
 
-<image src= "https://github.com/user-attachments/assets/e61c4a6a-c99e-4a64-88ea-f8ade8f1d767)">
+<image src= "https://github.com/user-attachments/assets/e61c4a6a-c99e-4a64-88ea-f8ade8f1d767">
 <br/>
 *Applictaion Ui at Day time*
+
+<img src= "https://github.com/user-attachments/assets/fc895ac0-f2a2-411d-962f-d48c64aaa906">
+<br/>
+*Code Snippet*
+
 
 # Diagrams
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/903e409d-dc77-4ffc-8a34-9884e4695492">
 
-#hosted link 
-<a href="https://www.example.com](https://beamish-haupia-c49e1b.netlify.app/" target="_blank"><b>Gm-Zzz</b></a>
+#hosted link : 
+<a href="https://beamish-haupia-c49e1b.netlify.app/" target="_blank"><b>Gm-Zzz</b></a>
 
 ## Team Contributions
 - Ashwin Harikumar - Api Integration,Sensor Integration 
