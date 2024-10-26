@@ -44,18 +44,21 @@ npm run dev, npm run build
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots :
 <image src = "https://github.com/user-attachments/assets/3458916d-5c42-4a4b-a247-ae70998c836a" >
 <br/>
-*Application UI at Night time*
-
+<br/>
+Application UI at Night time
+<br/>
+<br/>
 <image src= "https://github.com/user-attachments/assets/e61c4a6a-c99e-4a64-88ea-f8ade8f1d767">
 <br/>
-*Applictaion Ui at Day time*
-
+Applictaion Ui at Day time
+<br/>
+<br/>
 <img src= "https://github.com/user-attachments/assets/fc895ac0-f2a2-411d-962f-d48c64aaa906">
 <br/>
-*Code Snippet*
+Code Snippet
 
 
 # Diagrams
