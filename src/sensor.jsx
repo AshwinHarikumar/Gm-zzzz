@@ -54,13 +54,13 @@ function Sensor() {
   const getIlluminanceByTime = () => {
     const now = new Date();
     const hours = now.getHours();
-    if (hours >= 6 && hours < 18) return 10000;
-    else if (hours >= 18 && hours < 21) return 500;
+    if (hours >= 6 && hours < 18) return 1000;
+    else if (hours >= 18 && hours < 21) return 200;
     else return 50;
   };
 
   const determineDaytime = (illuminance) => {
-    setIsDaytime(illuminance > 800);
+    setIsDaytime(illuminance > 200);
   };
 
   return (
