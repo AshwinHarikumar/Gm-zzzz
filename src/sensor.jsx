@@ -60,7 +60,7 @@ function Sensor() {
   };
 
   const determineDaytime = (illuminance) => {
-    setIsDaytime(illuminance > 200);
+    setIsDaytime(illuminance > 50);
   };
 
   return (
